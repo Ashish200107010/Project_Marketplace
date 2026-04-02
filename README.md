@@ -16,45 +16,6 @@ Tech Stack
   PDF Generation     iText 7
   Auth               JWT in HttpOnly cookies, OTP verification
   
-Project Structure
------------------
-  Internship/
-  |
-  +-- Backend/
-  |   +-- pom.xml
-  |   +-- src/main/
-  |       +-- java/com/certplatform/
-  |       |   +-- admin/           Admin controllers & services
-  |       |   +-- auth/            JWT filter, OTP, login/register
-  |       |   +-- certificate/     PDF generation & signed URLs
-  |       |   +-- common/          Shared entities, repos, exception handler
-  |       |   +-- config/          SecurityConfig, WebConfig, CORS
-  |       |   +-- job/             Background review job queue
-  |       |   +-- notification/    Email services
-  |       |   +-- payment/         Razorpay initiation & webhooks
-  |       |   +-- project/         Project CRUD & file access
-  |       |   +-- review/          Submission review workflow
-  |       |   +-- submission/      Student submission handling
-  |       |   +-- user/            User profile & role management
-  |       +-- resources/
-  |           +-- application.yml  App configuration
-  |
-  +-- Frontend/
-      +-- index.html
-      +-- package.json
-      +-- src/
-          +-- App.jsx              Route definitions
-          +-- components/          Shared UI components
-          +-- constants/           App-wide constants
-          +-- context/             AuthContext, ProjectContext
-          +-- features/
-          |   +-- admin/           Admin dashboard & management
-          |   +-- auth/            Login, register, OTP screens
-          |   +-- payment/         Payment flow UI
-          |   +-- project/         Project listing & detail pages
-          |   +-- user/            Student dashboard & API helpers
-          +-- pages/               Static pages (About, Privacy, etc.)
-          +-- styles/              Global stylesheets
 
 Prerequisites
 -------------
