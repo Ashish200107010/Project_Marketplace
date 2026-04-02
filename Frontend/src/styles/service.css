@@ -1,0 +1,192 @@
+/* service.css */
+
+/* Main Wrapper */
+.service-page-wrapper {
+    background-color: #ffffff;
+    min-height: 85vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Left Section - Service Card */
+.service-card {
+    background: #fff;
+    padding: 20px 30px;
+}
+
+.badge-core {
+    background: #f0fdf4;
+    color: #16a34a;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.service-item i {
+    font-size: 1.3rem;
+    color: #16a34a; /* Green Icon */
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.service-item h6 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: #1a1a1a;
+}
+
+.service-item small {
+    color: #64748b;
+    line-height: 1.4;
+}
+
+/* Platform Infrastructure Box */
+.payment-gateway-box {
+    background: #f8fafc;
+    border-left: 4px solid #16a34a; /* Green Accent */
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.payment-gateway-box h5 {
+    font-weight: 800;
+    color: #0f172a;
+    font-size: 1.1rem;
+}
+
+.fee-amount {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+/* --- THE GREEN PAY BUTTON --- */
+.btn-payment {
+    background-color: #16a34a !important; /* Professional Green */
+    color: white !important;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+}
+
+.btn-payment:hover {
+    background-color: #15803d !important; /* Darker Green */
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.25);
+    transform: translateY(-1px);
+}
+
+/* Support Section - Right Side */
+.support-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    position: sticky;
+    top: 20px;
+}
+
+.support-header {
+    background: #0f172a; /* Corporate Dark Blue */
+    color: white;
+    padding: 15px 20px;
+}
+
+.online-indicator {
+    width: 8px;
+    height: 8px;
+    background: #22c55e; /* Online Green */
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.chat-window {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #f1f5f9;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Chat Bubbles */
+.chat-bubble {
+    max-width: 85%;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    border-radius: 12px;
+    line-height: 1.4;
+}
+
+.chat-bubble.admin {
+    align-self: flex-start;
+    background: #fff;
+    color: #334155;
+    border: 1px solid #e2e8f0;
+}
+
+.chat-bubble.user {
+    align-self: flex-end;
+    background: #16a34a; /* User bubble Green */
+    color: white;
+}
+
+/* Chat Input Area */
+.chat-input-area {
+    padding: 12px;
+    background: #fff;
+    display: flex;
+    gap: 8px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.chat-input {
+    border-radius: 6px;
+    font-size: 0.85rem;
+    border: 1px solid #cbd5e1;
+}
+
+.chat-input:focus {
+    border-color: #16a34a;
+    box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.1);
+}
+
+/* --- THE GREEN SEND BUTTON --- */
+.btn-send {
+    background-color: #16a34a; /* Matches Pay Button Green */
+    color: white;
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btn-send:hover {
+    background-color: #15803d; /* Darker Green */
+    transform: scale(1.05);
+}
+
+.btn-send i {
+    font-size: 1.1rem;
+}

@@ -1,0 +1,154 @@
+/* login.css */
+
+.login-page-wrapper {
+    background-color: #f8fbff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-main-card {
+    background: #ffffff;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 950px;
+    width: 100%;
+    min-height: 550px; /* Ensures consistent height */
+}
+
+/* Character Side Centering */
+.bg-character-side {
+    background-color: #f0fdf4;
+    border-right: 1px solid #eef2f6;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.character-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Box Centering */
+.login-form-box {
+    width: 100%;
+    max-width: 360px; /* Prevents form from getting too wide */
+}
+
+/* --- THE CHARACTER (#229c20) --- */
+.cute-character {
+    width: 160px;
+    height: 150px;
+    background: #229c20;
+    border-radius: 50% 50% 42% 42%;
+    position: relative;
+    box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.character-text {
+    color: #229c20;
+}
+
+.eyes-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.eye {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pupil {
+    width: 18px;
+    height: 18px;
+    background: #0f172a;
+    border-radius: 50%;
+}
+
+.mouth {
+    width: 24px;
+    height: 12px;
+    border-bottom: 3px solid white;
+    border-radius: 0 0 12px 12px;
+    margin: 20px auto 0;
+}
+
+/* --- FORM COMPONENTS --- */
+.btn-primary-green {
+    background-color: #229c20 !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-green:hover {
+    background-color: #1a7a18 !important;
+    transform: translateY(-2px);
+}
+
+.custom-input {
+    padding: 11px 15px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    background-color: #fcfcfc;
+}
+
+.custom-input:focus {
+    border-color: #229c20;
+    box-shadow: 0 0 0 3px rgba(34, 156, 32, 0.1);
+    background-color: #fff;
+}
+
+.forgot-link, .register-link {
+    color: #229c20;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.forgot-link:hover, .register-link:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    text-align: center;
+    position: relative;
+}
+
+.divider span {
+    background: #fff;
+    padding: 0 15px;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    position: relative;
+    z-index: 2;
+}
+
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #eef2f6;
+    z-index: 1;
+}

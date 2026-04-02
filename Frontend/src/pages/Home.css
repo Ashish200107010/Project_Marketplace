@@ -1,0 +1,159 @@
+.home-container {
+  background-color: #f8fbff; /* Soft, clean background */
+  overflow: hidden;
+  position: relative;
+}
+
+.text-accent {
+  /*color: #4361ee;*/
+  color: #229c20; /* Deep gradient start */
+}
+
+/* Container for the right-side visual */
+.hero-visual-area {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The Video/Animation Frame */
+.animation-container {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: white;
+  border-radius: 40px; /* Modern "Squircle" shape */
+  overflow: hidden;
+  border: 8px solid rgba(255, 255, 255, 0.8);
+  transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Peeking Blobs with Movement */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.blob-1 {
+  width: 300px;
+  height: 300px;
+  /*background: #4361ee;*/
+  background: #229c20; /* Deep gradient start */
+  top: -10%;
+  right: -5%;
+  animation: float 8s infinite alternate;
+}
+
+.blob-2 {
+  width: 250px;
+  height: 250px;
+  /*background: #4cc9f0;*/
+  background: #229c20; /* Lighter gradient end */
+  bottom: 0%;
+  left: -10%;
+  animation: float 10s infinite alternate-reverse;
+}
+
+.blob-3 {
+  width: 150px;
+  height: 150px;
+  /*background: #f72585; /* Subtle pink accent */
+  background: #229c20; /* Subtle yellow accent */
+  top: 40%;
+  left: 10%;
+}
+
+/* Change the main button color */
+.btn-primary {
+  background-color: #229c20 !important;
+  border-color: #229c20 !important;
+  color: #ffffff !important; /* Ensures text is crisp white */
+  transition: all 0.3s ease;
+}
+
+/* Change the hover state */
+.btn-primary:hover {
+  background-color: #1a7a18 !important; /* A darker shade of your green */
+  border-color: #1a7a18 !important;
+  box-shadow: 0 8px 15px rgba(34, 156, 32, 0.3) !important; /* Greenish shadow */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Fix the 'focus' glow (that annoying blue ring) */
+.btn-primary:focus, .btn-check:checked + .btn-primary {
+  background-color: #1a7a18 !important;
+  border-color: #1a7a18 !important;
+  box-shadow: 0 0 0 0.25 margin rgba(34, 156, 32, 0.5) !important;
+}
+
+/* New Style for the Explore Button */
+.btn-outline-custom {
+  background-color: #ffffff !important;
+  color: #229c20 !important; /* Your brand green */
+  border: 2px solid #229c20 !important;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: #f0fdf0 !important; /* Very faint green tint on hover */
+  color: #1a7a18 !important; /* Darker green */
+  border-color: #1a7a18 !important;
+  box-shadow: 0 8px 15px rgba(34, 156, 32, 0.15) !important;
+  transform: translateY(-2px);
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(30px, -20px) scale(1.1); }
+}
+
+.z-index-10 {
+  position: relative;
+  z-index: 10;
+}
+
+/*//////////////////////////////////* Responsive Adjustments - for right side animation*/
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeSlide 16s infinite;
+}
+
+.slider-image:nth-child(1) { animation-delay: 0s; }
+.slider-image:nth-child(2) { animation-delay: 4s; }
+.slider-image:nth-child(3) { animation-delay: 8s; }
+.slider-image:nth-child(4) { animation-delay: 12s; }
+.slider-image:nth-child(5) { animation-delay: 16s; }
+
+@keyframes fadeSlide {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  25% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}

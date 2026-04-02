@@ -1,0 +1,51 @@
+privacy.css
+
+.privacy-page-wrapper {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Original Heading Style */
+.privacy-page-wrapper h1.fw-bold {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.legal-content-body {
+  text-align: left;
+}
+
+/* Reduced spacing between sections */
+.legal-content-body section {
+  margin-bottom: 12px; /* Very tight spacing */
+  padding: 0;
+}
+
+.legal-content-body h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 4px; /* Tight heading to text space */
+  text-transform: uppercase;
+  color: #000;
+}
+
+.legal-content-body p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.88rem;
+  line-height: 1.35; /* Tight line height to pack more text */
+  text-align: left;
+  color: #222;
+  margin-bottom: 8px; /* Minimal space between paragraphs */
+}
+
+.legal-content-body strong {
+  color: #000;
+}
+
+/* Removal of any padding/dividers that cause white space */
+.legal-content-body {
+  border: none;
+  box-shadow: none;
+}

@@ -1,0 +1,30 @@
+/* footer.css */
+
+.footer-section {
+  background-color: #fcfdfe; 
+  border-top: 1px solid #edf2f7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: auto; /* Keeps footer at the bottom of the page */
+}
+
+.text-green {
+  color: #229c20;
+}
+
+/* Optional: Add a very subtle green glow to the brand name on hover */
+.footer-section h5:hover .text-green {
+  text-shadow: 0 0 8px rgba(34, 156, 32, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* Ensures the text is perfectly vertically aligned */
+.footer-section .row {
+  min-height: 80px;
+}
+
+@media (max-width: 768px) {
+  .footer-section .text-center {
+    padding-top: 10px;
+  }
+}
