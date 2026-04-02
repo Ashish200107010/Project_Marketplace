@@ -1,6 +1,7 @@
 # Project_Marketplace a Virtual Internship & Certification Platform
 ==========================================================
 A full-stack web application that enables students to browse virtual internship projects, enroll, submit work, go through a review workflow, and receive verifiable PDF certificates upon completion. Includes Razorpay payment integration, email-based OTP authentication, and an admin dashboard for project and user management.
+
 Tech Stack
 ----------
   Layer              Technologies
@@ -14,6 +15,7 @@ Tech Stack
   Email              Spring Mail via SendGrid SMTP
   PDF Generation     iText 7
   Auth               JWT in HttpOnly cookies, OTP verification
+  
 Project Structure
 -----------------
   Internship/
@@ -53,6 +55,7 @@ Project Structure
           |   +-- user/            Student dashboard & API helpers
           +-- pages/               Static pages (About, Privacy, etc.)
           +-- styles/              Global stylesheets
+
 Prerequisites
 -------------
   - Java 17+
